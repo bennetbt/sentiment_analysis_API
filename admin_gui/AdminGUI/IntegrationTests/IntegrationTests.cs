@@ -110,7 +110,7 @@ namespace IntegrationTest
             var response = await _httpClient.PostAsync(PythonApiUrl, requestBody);
             var responseContent = await response.Content.ReadAsStringAsync();
 
-            // Assert
+            // Assert - Btb
             Assert.That(response.StatusCode, Is.EqualTo(System.Net.HttpStatusCode.OK));
             Assert.IsNotNull(responseContent);
 
